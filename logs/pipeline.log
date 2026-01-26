@@ -1,0 +1,7 @@
+INFO:root:Data extracted successfully
+INFO:root:Data transformed successfully
+INFO:root:Validated users count: 10
+2026-01-25 18:08:28,353 - INFO - Data extracted successfully
+2026-01-25 18:08:28,355 - INFO - Data transformed successfully
+2026-01-25 18:08:28,355 - INFO - Validated users count: 10
+2026-01-25 18:08:28,367 - INFO - Data inserted into SQLite
