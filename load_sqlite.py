@@ -12,15 +12,19 @@ def load_to_sqlite(users):
             name TEXT,
             email TEXT,
             city TEXT,
-            zipcode TEXT
+            zipcode TEXT,
+            latitude REAL,
+            longitude REAL
+ 
         )
     """)
 
     for u in users:
         cur.execute("""
-            INSERT OR IGNORE INTO users VALUES (?, ?, ?, ?, ?)
+           INSERT OR IGNORE INTO users VALUES (?, ?, ?, ?, ?, ?, ?)
+
         """, (
-            u["user_id"], u["name"], u["email"], u["city"], u["zipcode"]
+            u["user_id"], u["name"], u["email"], u["city"], u["zipcode"] , u["latitude"], u["longitude"]
         ))
 
     conn.commit()

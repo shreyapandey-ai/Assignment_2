@@ -6,7 +6,7 @@ from extract import extract_users
 from transform import transform_users
 from validate import validate_users
 from load_sqlite import load_to_sqlite
-from insights import users_per_city
+
 
 # create folders if missing
 os.makedirs("logs", exist_ok=True)
@@ -19,15 +19,22 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-# ✅ DEFINE FUNCTION FIRST
 def save_csv(users):
+    if not users:
+        return
+
+    fieldnames = set()
+    for u in users:
+        fieldnames.update(u.keys())
+
     with open("data/cleaned_users.csv", "w", newline="") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["user_id", "name", "email", "city", "zipcode"]
+            fieldnames=sorted(fieldnames)
         )
         writer.writeheader()
         writer.writerows(users)
+
 
 # 🔽 PIPELINE EXECUTION
 raw = extract_users()
@@ -36,4 +43,7 @@ validated = validate_users(cleaned)
 
 save_csv(validated)
 load_to_sqlite(validated)
-users_per_city()
+
+
+print("Pipeline completed successfully");
+

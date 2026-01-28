@@ -21,6 +21,17 @@ def validate_users(users):
         if not u["zipcode"] or len(u["zipcode"]) < 5:
             logging.warning(f"Invalid zipcode rejected: {u}")
             continue
+        lat = u.get("latitude")
+        lon = u.get("longitude")
+    
+        if lat is not None and not (-90 <= lat <= 90):
+           logging.warning(f"Invalid latitude rejected: {u}")
+           continue
+
+        if lon is not None and not (-180 <= lon <= 180):
+            logging.warning(f"Invalid longitude rejected: {u}")
+            continue
+
 
         seen_ids.add(u["user_id"])
         valid.append(u)

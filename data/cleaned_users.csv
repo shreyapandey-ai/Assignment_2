@@ -1,11 +1,11 @@
-user_id,name,email,city,zipcode
-1,Leanne Graham,Sincere@april.biz,Gwenborough,92998-3874
-2,Ervin Howell,Shanna@melissa.tv,Wisokyburgh,90566-7771
-3,Clementine Bauch,Nathan@yesenia.net,McKenziehaven,59590-4157
-4,Patricia Lebsack,Julianne.OConner@kory.org,South Elvis,53919-4257
-5,Chelsey Dietrich,Lucio_Hettinger@annie.ca,Roscoeview,33263
-6,Mrs. Dennis Schulist,Karley_Dach@jasper.info,South Christy,23505-1337
-7,Kurtis Weissnat,Telly.Hoeger@billy.biz,Howemouth,58804-1099
-8,Nicholas Runolfsdottir V,Sherwood@rosamond.me,Aliyaview,45169
-9,Glenna Reichert,Chaim_McDermott@dana.io,Bartholomebury,76495-3109
-10,Clementina DuBuque,Rey.Padberg@karina.biz,Lebsackbury,31428-2261
+city,email,latitude,longitude,name,user_id,zipcode
+Gwenborough,Sincere@april.biz,,,Leanne Graham,1,92998-3874
+Wisokyburgh,Shanna@melissa.tv,,,Ervin Howell,2,90566-7771
+McKenziehaven,Nathan@yesenia.net,,,Clementine Bauch,3,59590-4157
+South Elvis,Julianne.OConner@kory.org,,,Patricia Lebsack,4,53919-4257
+Roscoeview,Lucio_Hettinger@annie.ca,,,Chelsey Dietrich,5,33263
+South Christy,Karley_Dach@jasper.info,,,Mrs. Dennis Schulist,6,23505-1337
+Howemouth,Telly.Hoeger@billy.biz,,,Kurtis Weissnat,7,58804-1099
+Aliyaview,Sherwood@rosamond.me,,,Nicholas Runolfsdottir V,8,45169
+Bartholomebury,Chaim_McDermott@dana.io,,,Glenna Reichert,9,76495-3109
+Lebsackbury,Rey.Padberg@karina.biz,,,Clementina DuBuque,10,31428-2261
