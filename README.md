@@ -32,19 +32,19 @@ The goal of this assignment is to demonstrate:
 }
 ```
 Assignment_2/
-├── extract.py          # Fetches data from API
-├── validate.py         # Validation logic
-├── pipeline.py         # End-to-end pipeline runner
-├── data/               # Stored outputs (CSV / DB)
-├── README.md
-├── .gitignore
-└── requirements.txt
+-├── extract.py          # Fetches data from API
+-├── validate.py         # Validation logic
+-├── pipeline.py         # End-to-end pipeline runner
+-├── data/               # Stored outputs (CSV / DB)
+-├── README.md
+-├── .gitignore
+-└── requirements.txt
 
-Fetching users from API...
-Total records fetched: 10
-Valid records: 10
-Invalid records: 0
-Data pipeline completed successfully.
+-Fetching users from API...
+-Total records fetched: 10
+-Valid records: 10
+-Invalid records: 0
+-Data pipeline completed successfully.
 
 
 
